@@ -51,11 +51,6 @@ A comprehensive web-based college management system that streamlines administrat
 - MySQL (v5.7 or higher)  
 - npm or yarn  
 
-### Backend Setup
-```bash
-cd Server
-npm install
-
 
 
 ##### .env
