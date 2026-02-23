@@ -1,0 +1,20 @@
+.pnc-department-header {
+  position: relative;
+  height: 300px;
+  padding: var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+
+.pnc-department-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.pnc-department-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

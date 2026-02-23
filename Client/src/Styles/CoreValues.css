@@ -1,0 +1,92 @@
+.Core-container {
+  padding: 60px 20px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  /* background-color: #f0f4f8;  */
+  overflow: hidden; 
+}
+
+.Core-container::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("/Images/image.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  /* background-color: black; */
+  opacity: 0.04; 
+  z-index: -1; 
+}
+
+
+
+
+.core-values h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.values-container .value-card:nth-child(4) {
+  grid-column: 1;  
+  justify-self: center;  
+  width: 550px;
+
+}
+
+
+.value-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.value-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.value-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .values-container {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .values-container .value-card:nth-child(4) {
+    grid-column: auto; 
+    width: 100%;     
+  }
+}

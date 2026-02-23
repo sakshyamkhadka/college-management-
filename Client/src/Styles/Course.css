@@ -1,0 +1,106 @@
+.coursemain {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding);
+  gap: 40px;
+}
+
+.coursetext {
+  flex: 1;
+}
+
+.coursetext h1 {
+  position: relative;
+  font-size: 42px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.coursetext h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.coursetext h2 {
+  font-size: 26px;
+  color: var(--primary-color);
+  margin-top: 25px;
+}
+
+.coursetext p {
+  margin-top: 15px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #444;
+}
+
+.courseimage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.courseimage img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  height: 400px;
+}
+
+.course-heading {  
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: var(--primary-color);
+  padding: 0 12px;
+}
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.course-table th,
+.course-table td {
+  padding: 6px ;
+  text-align: left;
+}
+
+.course-table th {
+  font-size: 18px;
+  color: #333;
+}
+
+.course-table td {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .course-table, .course-table thead, .course-table tbody, .course-table th, .course-table td, .course-table tr {
+    display: block;
+  }
+
+  .course-table thead {
+    display: none;
+  }
+
+  .course-table tr {
+    margin-bottom: 16px;
+  }
+
+  .course-table td {
+    padding: 10px 14px;
+    text-align: right;
+    position: relative;
+  }
+
+
+}

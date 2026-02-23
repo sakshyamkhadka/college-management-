@@ -1,0 +1,53 @@
+.hero {
+  position: relative;
+  height: 50vh;
+  background: url('Images/collegeimage.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:calc(100%) ;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: white;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  padding: 12px 26px;
+  background: #2a72d8;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background: #1d56a8;
+}

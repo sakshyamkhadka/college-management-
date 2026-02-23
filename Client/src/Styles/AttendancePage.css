@@ -1,0 +1,122 @@
+.attendance-page{
+    padding: 40px;
+    background: #f8f8f8;
+    min-height: 100vh;
+}
+
+.page-title{
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.attendance-form-card{
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+}
+
+.attendance-form-card h2{
+    margin-bottom: 20px;
+}
+
+.attendance-form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 15px;
+}
+
+.attendance-form input,
+.attendance-form select{
+    padding: 12px 14px;
+
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.attendance-form input:focus,
+.attendance-form select:focus{
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-actions{
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 12px;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px 22px;
+
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary{
+    background: #ccc;
+    color: #333;
+    padding: 10px 22px;
+    /* border-radius: 8px; */
+    border: none;
+    cursor: pointer;
+}
+
+.attendance-grid{
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+th{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+tr:hover{
+    background: #f3f3f3;
+}
+
+.btn-edit{
+    background: #f39c12;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.btn-delete{
+    background: #c0392b;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .attendance-page{
+        padding: 20px;
+    }
+    .page-title{
+        font-size: 22px;
+    }
+}

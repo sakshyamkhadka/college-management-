@@ -1,0 +1,63 @@
+.heroabout{
+    display: flex;
+     padding: var(--padding);
+     margin-top: 20px;
+}
+.heroabout_text{
+  padding: 20px;
+}
+.heroabout_text p{
+  padding:5px;
+}
+.heroabout_image img{
+    width: 500px;
+    height: 300px;
+}
+
+.stats-section {
+  display: flex;
+  justify-content:space-between;
+
+  width: 600px;
+  text-align: center;
+  padding: 60px 0;
+  flex-wrap: wrap;
+}
+
+.text{
+  background-color: #8715326d;
+  border-left:8px solid #871532;
+  width: 600px;
+  
+
+}
+
+.text h4{
+ font-family: "Kedebideri", sans-serif;
+   font-weight: 400;
+   padding: 10px;
+   font-style: italic;
+   
+}
+
+.herobutton {
+  display: inline-block;
+  padding: 12px 26px;
+  background-color: var(--primary-color);  
+  color: #fff;                
+  text-decoration: none;       
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+    margin-top: 20px; 
+
+}
+
+.herobutton:hover {
+  transform: translateY(-2px);
+}
+
+.herobutton:active {
+  transform: scale(0.97);
+}

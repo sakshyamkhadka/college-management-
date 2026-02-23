@@ -1,0 +1,113 @@
+.herocard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;    
+  /* width: 100%; */
+  margin-top: -60px;
+}
+
+.card {
+background-color: white;
+  color: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  width: 260px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  z-index: 100;
+  }
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+ 
+.event-card {
+    width: 100vw;            
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    margin: 30px 0;
+}
+
+.card-event {
+    width: 100%;
+    max-width: 1000px;      
+    margin: 0 auto;         
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.event-date {
+    text-align: center;
+    background: var(--primary-color);
+    padding: 10px 14px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    color: white;
+}
+
+.event-date .month {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.event-details {
+    flex-grow: 1;  
+}
+
+.event-details h2 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+}
+
+.event-details p {
+    margin: 0;
+}
+
+.event-btn {
+    padding: 10px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    flex-shrink: 0; 
+}
+
+.event-btn:hover {
+    background-color: #a9183d;
+}

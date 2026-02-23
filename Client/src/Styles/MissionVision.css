@@ -1,0 +1,29 @@
+.mission-vision-page {
+  display: flex;
+  align-items: center;
+  padding:var(--padding);
+  gap: 30px;
+  height: 100%;
+  color: #333;
+}
+
+.mv-section {
+  background: white;
+  padding: 40px 30px;
+  height: 100%;
+  margin: 20px 0;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.mv-section h2 {
+  font-size: 2rem;
+  /* margin-bottom: 20px; */
+  color: var(--primary-color);
+}
+
+.mv-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,199 @@
+
+
+.admin-page-container{
+    max-width: 1100px;
+    margin: auto;
+    padding: var(--padding);
+}
+
+.admin-page-controls{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.admin-page-controls label{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.admin-page-controls select,
+.admin-page-controls input{
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: 0.2s all ease-in-out;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-buttons button {
+  margin: 0 10px;
+  padding: 5px 15px;
+}
+
+
+.admin-page-controls select:focus,
+.admin-page-controls input:focus{
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.admin-page-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #e0e0e0;
+}
+
+.admin-page-table th,
+.admin-page-table td{
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.admin-page-table th{
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-page-table tr{
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+}
+
+.admin-page-table tr:hover{
+    background-color: #f9f9f9;
+}
+
+.admin-page-table input[type="password"]{
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.action-buttons{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.approve-btn,
+.reject-btn{
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    min-width: 90px;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+}
+
+.approve-btn{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.approve-btn:hover{
+    background-color: #a11d4c;
+}
+
+.reject-btn{
+    background-color: #fff;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.reject-btn:hover{
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.admin-loading,
+.admin-error{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px){
+    .admin-page-controls{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .admin-page-table thead{
+        display: none;
+    }
+
+    .admin-page-table,
+    .admin-page-table tbody,
+    .admin-page-table tr,
+    .admin-page-table td{
+        display: block;
+        width: 100%;
+    }
+
+    .admin-page-table tr{
+        margin-bottom: 15px;
+        border-bottom: 2px solid #eee;
+        padding: 10px 0;
+    }
+
+    .admin-page-table td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .admin-page-table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 16px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: 500;
+        color: var(--primary-color);
+    }
+
+    .action-buttons{
+        justify-content: flex-start;
+    }
+}

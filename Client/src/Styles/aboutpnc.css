@@ -1,0 +1,35 @@
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.about-img {
+  flex: 1 1 300px;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 2 1 500px;
+  text-align: left;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
+}

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-color:#871532;
+    --padding: 0 40px;
+    --font-family: "Roboto", sans-serif;
+}
+body{
+    overflow-x: hidden;
+    font-family: var(--font-family);
+}
+h1{
+    color: var(--primary-color);
+}
