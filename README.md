@@ -153,12 +153,12 @@ College Management/
 After setting up, you can access the system with:
 
 - **Admin Account:**
-  - Email: admin@pnc.edu.np
+  - Email: admin@pnc.adm
   - Password: admin123
 
 - **Student Account:**
-  - Email: student@pnc.edu.np
-  - Password: student123
+  - Email: student@pnc.stu
+  - Password: student123!
 
 ## 📡 API Endpoints
 
